@@ -6,7 +6,9 @@ using System.Threading.Tasks;
 
 namespace CSharpShop3.Exceptions
 {
-    internal class AcquaFinita
+    public class AcquaFinita :Exception
     {
+        public AcquaFinita() { }
+        public AcquaFinita(string message) : base(message) { }
     }
 }

@@ -9,6 +9,8 @@ namespace CSharpShop2
 {
     public class Prodotto
     {
+        public static int contatoreProdottiInstanziati = 0;
+       
         protected int codice;
         protected string nome;
         protected string descrizione;
@@ -21,6 +23,7 @@ namespace CSharpShop2
             this.codice = GeneraCodice();
             this.prezzo = prezzo;
             this.iva = iva;
+            contatoreProdottiInstanziati++;
         }
         
         public int GetCodice()

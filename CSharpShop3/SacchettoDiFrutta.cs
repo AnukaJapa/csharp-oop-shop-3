@@ -65,8 +65,8 @@ namespace CSharpShop2
         }
         public override void StampaProdotto()
         {
-            int prezzoSenzaIva = this.prezzo;
-            int prezzoConIva = this.GetPrezzoConIva();
+            double prezzoSenzaIva = this.prezzo;
+            double prezzoConIva = this.GetPrezzoConIva();
 
 
             this.descrizione = $@" 
